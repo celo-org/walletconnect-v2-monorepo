@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us.gcr.io/$PROJECT_ID/walletconnect:$COMMIT_SHA', '--build-arg', 'githash=$COMMIT_SHA', '-f', 'ops/relay.Dockerfile', '.' ]
+  waitFor: ["-"]
+images:
+- 'us.gcr.io/$PROJECT_ID/walletconnect:$COMMIT_SHA'
+timeout: 2700s
