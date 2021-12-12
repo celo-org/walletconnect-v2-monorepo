@@ -45,7 +45,7 @@
     "caip-api": "^1.4.6",
     "eth-sig-util": "^2.5.3",
     "ethereumjs-util": "^7.0.6",
-    "ethers": "^5.0.30",
+    "ethers": "^5.5.1",
     "prop-types": "^15.7.2",
     "qr-image": "^3.2.0",
     "react": "^17.0.1",
